@@ -1,0 +1,203 @@
+/* Background and Fonts */
+body {
+    background: url('../images/aid.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #FFFFFF; /* White color for text to stand out on the image */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Style */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(47, 46, 46, 0.8); /* Dark brown color with transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Style */
+header {
+    background-color: rgba(47, 46, 46, 0.9); /* Dark brown color with transparency */
+    color: #FFFFFF; /* White color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Navigation Style */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(47, 46, 46, 0.9); /* Dark brown color with transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+/* Footer Style */
+footer {
+    background-color: rgba(47, 46, 46, 0.9); /* Dark brown color with transparency */
+    color: #FFFFFF; /* White color */
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Form Style */
+form {
+    padding: 20px;
+    background-color: rgba(47, 46, 46, 0.8); /* Dark brown color with transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFF;
+    color: #2F2E2E;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Submit Button Style */
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #A52A2A; /* Black color */
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2F2E2E; /* Dark brown color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header, footer {
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: rgba(47, 46, 46, 0.9);
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="password"], textarea {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    header, footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 8px;
+        border-radius: 4px;
+        background-color: rgba(47, 46, 46, 0.9);
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="password"], textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}

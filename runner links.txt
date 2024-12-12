@@ -1,0 +1,25 @@
+Test the Forms
+Index/Dashboard/Home:
+
+Go to http://localhost/AidAtlas/index.php and create a new user.
+
+Register:
+
+Go to http://localhost/AidAtlas/register.php and create a new user.
+
+Login:
+
+Go to http://localhost/AidAtlas/login.php and log in with the user credentials.
+
+Save Data:
+
+Go to http://localhost/AidAtlas/save_data.php and save some data.
+
+Search Data:
+
+Go to http://localhost/AidAtlas/search.php to search for saved data.
+
+Delete Data:
+
+Go to http://localhost/AidAtlas/delete.php to delete specific records.
+          
